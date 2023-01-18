@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>$(SolutionDir)/build/Infrastructure/Notes.Persistence/bin/Debug</OutputPath>
+        <IntermediateOutputPath>$(SolutionDir)/build/Infrastructure/Notes.Persistence/obj/Debug</IntermediateOutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <OutputPath>$(SolutionDir)/build/Infrastructure/Notes.Persistence/bin/Release</OutputPath>
+        <IntermediateOutputPath>$(SolutionDir)/build/Infrastructure/Notes.Persistence/obj/Release</IntermediateOutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Core\Notes.Application\Notes.Application.csproj" />
+      <ProjectReference Include="..\..\Core\Notes.Domain\Notes.Domain.csproj" />
+    </ItemGroup>
+    
+</Project>

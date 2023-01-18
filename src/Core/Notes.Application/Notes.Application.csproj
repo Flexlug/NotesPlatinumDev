@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>$(SolutionDir)/build/Core/Notes.Application/bin/Debug</OutputPath>
+        <IntermediateOutputPath>$(SolutionDir)/build/Core/Notes.Application/obj/Debug</IntermediateOutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <OutputPath>$(SolutionDir)/build/Core/Notes.Application/bin/Release</OutputPath>
+        <IntermediateOutputPath>$(SolutionDir)/build/Core/Notes.Application/obj/Release</IntermediateOutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Notes.Domain\Notes.Domain.csproj" />
+    </ItemGroup>
+    
+</Project>

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>$(SolutionDir)/build/Presentation/Notes.WebApi/bin/Debug</OutputPath>
+        <IntermediateOutputPath>$(SolutionDir)/build/Presentation/Notes.WebApi/obj/Debug</IntermediateOutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <OutputPath>$(SolutionDir)/build/Presentation/Notes.WebApi/bin/Release</OutputPath>
+        <IntermediateOutputPath>$(SolutionDir)/build/Presentation/Notes.WebApi/obj/Release</IntermediateOutputPath>
+    </PropertyGroup>
+    
+</Project>

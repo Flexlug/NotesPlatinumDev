@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>$(SolutionDir)/build/Core/Notes.Domain/bin/Debug</OutputPath>
+        <IntermediateOutputPath>$(SolutionDir)/build/Core/Notes.Domain/obj/Debug</IntermediateOutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <OutputPath>$(SolutionDir)/build/Core/Notes.Domain/bin/Release</OutputPath>
+        <IntermediateOutputPath>$(SolutionDir)/build/Core/Notes.Domain/obj/Release</IntermediateOutputPath>
+    </PropertyGroup>
+    
+</Project>
