@@ -1,8 +1,9 @@
 ﻿using System.Reflection;
+using AutoMapper;
 
 namespace Notes.Application.Common.Mappings;
 
-public class AssemblyMappingProfile
+public class AssemblyMappingProfile : Profile
 {
     public AssemblyMappingProfile(Assembly assembly) =>
         ApplyMappingsFromAssembly(assembly);
